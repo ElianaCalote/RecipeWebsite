@@ -11,6 +11,7 @@ function addImages (recipes) {
 for (let i= 0; i < recipes.length; i ++) {
  console.log(recipes[i])
  const newImg= document.createElement("img");
+ newImg.id="test"
  newImg.src= recipes[i].recipe.image;
 document.getElementById("images").appendChild(newImg);
 }
